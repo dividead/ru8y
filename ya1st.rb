@@ -1,3 +1,5 @@
+^[A-Za-z](?:[A-Za-z\d.-]{0,18}[A-Za-z])?$ #correct one
+
 print "enter your login:"
 gets.chomp =~ /^[A-z][[A-z]\d\-\.]{0,18}[[A-z][0-9]]?$/ ? (p "yeh") : (p "meh")
 
