@@ -1,7 +1,7 @@
 print "enter your login:"
 login = gets.chomp
 login.length.between?(1,20) ? 
-	[login =~ /^[a-zA-Z][[a-zA-Z]\d\-\.]*[[a-zA-Z][0-9]]$/ ? 
+	[login =~ /^[A-z][[A-z]\d\-\.]*[[A-z][0-9]]$/ ? 
 		(p "yep") : (p "nope")] 
 	: (p "2long")
 
@@ -9,7 +9,7 @@ login.length.between?(1,20) ?
 print "enter your login:"
 login = gets.chomp
 if login.length.between?(1,20) 
-  if login =~ /^[a-zA-Z][[a-zA-Z]\d\-\.]*[[a-zA-Z][0-9]]$/
+  if login =~ /^[A-z][[A-z]\d\-\.]*[[A-z][0-9]]$/
       p "k"
   else
       p "read rules"
