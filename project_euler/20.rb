@@ -1,0 +1,1 @@
+p ((1..100).inject {|x,y| x*y}).to_s.split('').inject {|x,y| x.to_i+y.to_i}
