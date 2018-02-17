@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title>red text</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin">
+
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        background: #2A323A;
+      }
+
+      .container {
+        margin-right: auto;
+        margin-left: auto;
+        width: 940px;
+      }
+
+      #ft-header {
+        padding-left: 8px;
+        border-bottom: 2px solid  #212830;
+      }
+
+      #ft-body {
+        padding: 48px 0;
+        text-align: center;
+        color: white;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .row {
+        margin-left: -20px;
+        padding-bottom: 10px;
+      }
+
+      .row::before,
+      .row::after {
+        display: table;
+        content: "";
+      }
+
+      .row::after {
+        clear: both;
+      }
+
+      .span3 {
+        width: 220px;
+        float: left;
+        margin-left: 20px;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        color: white;
+        margin: 0;
+        text-rendering: optimizelegibility;
+      }
+
+      h1.logo {
+        margin-left: 32px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      img.logo {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+
+        float: left;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+      }
+
+      h1.logo a {
+        color:  white;
+        text-shadow: none;
+        position: relative;
+        -webkit-mask: -webkit-gradient(radial, 17 17, 122, 17 17, 137, from(black), color-stop(0.5, rgba(0, 0, 0, 0.199)), to(black));
+        text-decoration: none;
+      }
+
+      a {
+        color: #08c;
+      }
+      
+      button {
+        margin: 10px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container" id="ft-header">
+      <div class="row">
+        <div class="span3">
+          <img alt="gitblog" class="logo" src="https://avatars0.githubusercontent.com/u/4695397?v=2&s=100" width="24">
+          <h1 class="logo"><a href="/">GitBlog</a></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="ft-body">
+      <form action="/" method="post">
+      <textarea name="content" placeholder="lie to me"></textarea><br>
+      <button type="submit">push</button>
+      </form>
+      <% @a.each do |i| %>
+        <p><%= i %></p>
+      <% end %>
+    </div>
+  </body>
+</html>
